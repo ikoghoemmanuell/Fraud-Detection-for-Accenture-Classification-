@@ -7,11 +7,17 @@
 
 Develop a Machine Learning API (Application Programming Interface) using FastAPI.
 
-![ai(3)](https://github.com/ikoghoemmanuell/Machine-Learning-API-using-FastAPI/assets/102419217/1566fe8f-68bc-48fd-b9e0-2f8de41fd18c)
+![alt text](image.png)
 
 ## Introduction
 
-We will explore a comprehensive machine learning project focused on predicting sepsis using classification techniques. By leveraging FastAPI, we were able to deploy the model as a user-friendly API, enabling real-time predictions. The combination of machine learning and web development has immense potential in healthcare and can significantly contribute to early sepsis detection and patient care.
+We will develop a model for predicting fraudulent transactions for a
+financial company and use insights from the model to develop an actionable plan. Data for the
+case is available in CSV format having 6362620 rows and 10 columns.
+Candidates can use whatever method they wish to develop their machine learning model.
+Following usual model development procedures, the model would be estimated on the
+calibration data and tested on the validation data. This case requires both statistical analysis and
+creativity/judgment.
 
 ## Description
 
@@ -29,19 +35,19 @@ Predicting sepsis is important because early recognition and intervention can si
 
 The data for this project is in a csv format. The following describes the columns present in the data.
 
-| Column Name | Target | Description                                                                   |
-| ----------- | ------ | ----------------------------------------------------------------------------- |
-| ID          | N/A    | Unique number to represent patient ID                                         |
-| PRG         | False  | Plasma glucose                                                                |
-| PL          | False  | Blood Work Result-1 (mu U/ml)                                                 |
-| PR          | False  | Blood Pressure (mm Hg)                                                        |
-| SK          | False  | Blood Work Result-2 (mm)                                                      |
-| TS          | False  | Blood Work Result-3 (mu U/ml)                                                 |
-| M11         | False  | Body mass index (weight in kg/(height in m)^2                                 |
-| BD2         | False  | Blood Work Result-4 (mu U/ml)                                                 |
-| Age         | False  | patients age (years)                                                          |
-| Insurance   | N/A    | If a patient holds a valid insurance card                                     |
-| Sepssis     | True   | Positive: if a patient in ICU will develop a sepsis , and Negative: otherwise |
+| Column Name    | Target | Description                                                                                                                                                                                                              |
+| -------------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| step           | N/A    | Maps a unit of time in the real world. In this case, 1 step is 1 hour of time. Total steps 744 (30 days simulation).                                                                                                     |
+| type           | False  | Type of transaction: CASH-IN, CASH-OUT, DEBIT, PAYMENT, and TRANSFER.                                                                                                                                                    |
+| amount         | False  | Amount of the transaction in local currency.                                                                                                                                                                             |
+| nameOrig       | False  | Customer who started the transaction.                                                                                                                                                                                    |
+| oldbalanceOrg  | False  | Initial balance before the transaction.                                                                                                                                                                                  |
+| newbalanceOrig | False  | New balance after the transaction.                                                                                                                                                                                       |
+| nameDest       | False  | Customer who is the recipient of the transaction.                                                                                                                                                                        |
+| oldbalanceDest | False  | Initial balance of the recipient before the transaction. Note that there is no information for customers that start with M (Merchants).                                                                                  |
+| newbalanceDest | False  | New balance of the recipient after the transaction. Note that there is no information for customers that start with M (Merchants).                                                                                       |
+| isFraud        | True   | Indicates if the transaction is fraudulent. Fraudulent transactions aim to profit by taking control of customers' accounts and emptying the funds by transferring to another account and then cashing out of the system. |
+| isFlaggedFraud | False  | Indicates if the transaction was flagged as suspicious for transferring more than 200,000 in a single transaction.                                                                                                       |
 
 ## Setup
 
