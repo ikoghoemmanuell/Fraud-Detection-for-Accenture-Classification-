@@ -2,34 +2,17 @@
 
 [![View Repositories](https://img.shields.io/badge/View-My_Repositories-blue?logo=GitHub)](https://github.com/ikoghoemmanuell?tab=repositories)
 [![View My Profile](https://img.shields.io/badge/MEDIUM-Article-purple?logo=Medium)](https://medium.com/@emmanuel.ikogho/classification-predicting-sepsis-with-machine-learning-and-fastapi-3a3d05d0b5b4)
-[![Docker App](https://img.shields.io/badge/Docker-App-yellow)](https://huggingface.co/spaces/ikoghoemmanuell/Sepsis-Prediction-With-FastAPI)
 [![Website](https://img.shields.io/badge/My-Website-darkgreen)](https://emmanuelikogho.netlify.app/)
-
-Develop a Machine Learning API (Application Programming Interface) using FastAPI.
 
 ![alt text](image.png)
 
-## Introduction
+## Introduction (What is Fraud?)
 
-We will develop a model for predicting fraudulent transactions for a
-financial company and use insights from the model to develop an actionable plan. Data for the
-case is available in CSV format having 6362620 rows and 10 columns.
-Candidates can use whatever method they wish to develop their machine learning model.
-Following usual model development procedures, the model would be estimated on the
-calibration data and tested on the validation data. This case requires both statistical analysis and
-creativity/judgment.
+Fraud is much more common than you think and can happen to any business. Spotting and stopping fraud early can prevent losses, reputational damage, and might even save your business from collapse.
 
-## Description
+Put simply, fraud is stealing by deception. If someone lies to you in order to steal money, property, or data, they may have committed fraud.
 
-## Importance of Project  
-
-The dataset used contains a list of patients in a hospital and their attributes and whether the patient is positive for Sepssis or not.
-
-Sepsis is a severe and potentially life-threatening condition that occurs when the body's response to an infection triggers widespread inflammation. It is often referred to as blood poisoning.
-
-The aim of this project is to explore the various factors that can cause sepsis in order to predict the occurence of sepsis.
-
-Predicting sepsis is important because early recognition and intervention can significantly improve patient outcomes. Sepsis can progress rapidly and become life-threatening within a short period. By identifying patients who are at risk of developing sepsis, healthcare providers can initiate timely treatment and interventions to prevent the condition from worsening.
+In this project, we will develop a model for predicting fraudulent transactions for a financial company and then use insights from the model to develop a plan of action.
 
 # Dataset Description -
 
@@ -75,42 +58,6 @@ The both long command-lines have a same structure, they pipe multiple commands u
 4. **Install the required libraries/packages** listed in the `requirements.txt` file so that it will be allow to import them into the python's scripts and notebooks without any issue.
 
 **NB:** For MacOs users, please install `Xcode` if you have an issue.
-
-## Run FastAPI
-
-To run the fastAPI, paste this code to your terminal:
-
-```python
-uvicorn main:app — reload
-```
-
-When you run the script and start the web server using Uvicorn, your FastAPI application becomes accessible at
-
-```python
-http://127.0.0.1:8000
-```
-
-To access the documentation of your API, you can simply add “/docs” to the URL:
-
-```python
-http://127.0.0.1:8000/docs
-```
-
-## Screenshots
-
-![ezgif com-optimize (1)](https://github.com/ikoghoemmanuell/Machine-Learning-API-using-FastAPI/assets/102419217/a8352c5f-afea-43b1-8bf5-c24607cf3481)
-![ezgif com-crop](https://github.com/ikoghoemmanuell/Machine-Learning-API-using-FastAPI/assets/102419217/df0ed5a8-2daf-47ca-a4f5-e6128429d5d3)
-
-## Resources
-
-Here are some ressources you would read to have a good understanding of FastAPI :
-
-- [Tutorial - User Guide](https://fastapi.tiangolo.com/tutorial/)
-- [Video - Building a Machine Learning API in 15 Minutes ](https://youtu.be/C82lT9cWQiA)
-- [FastAPI for Machine Learning: Live coding an ML web application](https://www.youtube.com/watch?v=_BZGtifh_gw)
-- [Video - Deploy ML models with FastAPI, Docker, and Heroku ](https://www.youtube.com/watch?v=h5wLuVDr0oc)
-- [FastAPI Tutorial Series](https://www.youtube.com/watch?v=tKL6wEqbyNs&list=PLShTCj6cbon9gK9AbDSxZbas1F6b6C_Mx)
-- [Http status codes](https://www.linkedin.com/feed/update/urn:li:activity:7017027658400063488?utm_source=share&utm_medium=member_desktop)
 
 ## 👏 Support
 
